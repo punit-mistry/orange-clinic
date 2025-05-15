@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { useRouter } from 'next/navigation';
+import { Button } from '../ui/button';
 
 const services = [
   {
@@ -29,6 +31,7 @@ const cardVariants = {
 };
 
 const ServicesSection = () => {
+  const router = useRouter();
   const topRef = useRef(null);
   const cardsRef = useRef(null);
   const btnsRef = useRef(null);
@@ -84,10 +87,15 @@ const ServicesSection = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={isBtnsInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 0.7 }}
-        className="flex flex-col sm:flex-row gap-4 justify-center"
+        className="flex flex-col sm:flex-row gap-4 justify-center "
       >
-        <button className="px-6 py-2 bg-[#FF9800] text-white rounded-full font-medium shadow hover:scale-105 transition-all cursor-pointer">Learn More</button>
-        <button className="px-6 py-2 border-2 border-[#FF9800]  text-black rounded-full font-medium hover:bg-[#FF9800] hover:text-white transition-all cursor-pointer">Explore <span className="ml-1">&rarr;</span></button>
+        <Button 
+          onClick={() => router.push('/services')}
+          variant={'link'}
+          className="px-6 py-2 border-2 border-[#FF9800] text-black bg-white rounded-full font-medium hover:bg-[#FF9800] hover:text-white transition-all cursor-pointer"
+        >
+          Explore More <span className="ml-1">&rarr;</span>
+        </Button>
       </motion.div>
     </section>
   );
