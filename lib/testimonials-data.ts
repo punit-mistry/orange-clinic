@@ -1,0 +1,210 @@
+
+
+export const testimonials = [
+    {
+          name: 'Rita Shah',
+      title: 'Patient',
+      review: "I had breast cancer in 2016. During treatment, Aditi's diet helped me combat the side effects of chemotherapy, and with that diet, I finished off my treatment easily. Thanks, Aditi.",
+      rating: 5,
+    },
+    {
+      name: 'Anish Bhobe',
+      title: 'Patient',
+      review: "I've been living alone in France for a few years. I was feeling the decline in health because of my eating habits. I'd heard good things about Aditi from my family.",
+      rating: 5,
+    },
+    {
+      name: 'Anmol Banka',
+      title: 'Patient',
+      review: "I have tried many diets but the diet prescribed by Aditi (Orange Clinic) has worked the best for me. Aditi makes a personalised diet according to the habits and eating patterns of each individual which is the best part. I reduced 15kgs in 7 months with following her diet consistently.",
+      rating: 5,
+    },
+    {
+      name: 'Vishwas Sambhus',
+      title: 'Patient',
+      review: "When I approached Aditi, I was at the lowest possible ebb physically & mentally. I had to literally start rebuilding myself. This was an uphill task. Aditi has helped me to take sure steps, without overwhelming me by the transition.",
+      rating: 5,
+    },
+    {
+      name: 'Sayed Faiza Quadri',
+      title: 'Patient',
+      review: "I have benefited a lot from Dr. Aditi’s Services. I have noticed remarkable change in my health and weight. Always struggled with gaining weight but her counseling helped me easily increase weight. Would totally recommend Dr. Aditi’s Services.",
+      rating: 5,
+    },
+    {
+      name: 'Harsha Shah',
+      title: 'Patient',
+      review: "I had an excellent experience with Aditi. Unlike many dietitians focused solely on weight loss, she specializes in managing a wide range of health conditions. Her solution-centric approach and keen attention to even the smallest details make her exceptional.",
+      rating: 5,
+    },
+    {
+      name: 'Priya Naidu',
+      title: 'Patient',
+      review: "Aditi has helped me reach my weight goal by following a well-balanced diet. I am happy with clarity she provided during the follow-up conversations on WhatsApp.",
+      rating: 5,
+    },
+    {
+      name: 'Himanshu Gurung',
+      title: 'Patient',
+      review: "Stupendous work ethic and excellent support along with deep knowledge of what she’s doing. Worth every penny going to Aditi for your diet and nutrition changes.",
+      rating: 5,
+    },
+    // {
+    //   name: 'Sandesh Kuckian',
+    //   title: 'Patient',
+    //   review: "I have been trying to find a good nutritionist in the US for a number of years until thankfully I got introduced to Aditi... she meticulously listens to concerns and develops a custom diet plan that significantly enhances diet lifestyle and health.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Pearl Jalota',
+    //   title: 'Patient',
+    //   review: "I was very skeptical about joining a nutritionist before I met Aditi who has tremendously helped me to build a relationship with food and helped with a smooth transition from my earlier habits to the new healthy ones. The small changes have made a big difference.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Maitri Shah',
+    //   title: 'Patient',
+    //   review: "Aditi is an amazing person. I have enrolled with her and have almost reduced around 3-4kg in a month with a 2-inch loss. Though I am a very lazy person, still somehow she managed to tackle me... my lifestyle and my lazy nature.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Ritesh Gosar',
+    //   title: 'Patient',
+    //   review: "We are glad that we interacted with Aditi for nutrition consulting. She has patient ears, gives several options for each meal plan, sticks to good quality natural food rather than artificial processed food items. We have reached out to her multiple times and are always satisfied.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Dhaval Surti',
+    //   title: 'Patient',
+    //   review: "I am a diabetic. My A1C was 11. Aditi told me all the things I was doing wrong with my eating habits. She made a healthy and yet reasonable diet plan for me. Also, she recommended the best time and intervals for when to eat in a day. I followed her advice, and my A1C dropped significantly.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Naveen Goyal',
+    //   title: 'Patient',
+    //   review: "Very experienced professional, understands all aspects of Nutrition very well and helps in setting diets and exercise regime. Exceptional yoga instructor, Aditi has great knowledge and customises her sessions as per clients' needs.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Prachi Parekh',
+    //   title: 'Patient',
+    //   review: "I have been consulting Ms. Aditi Khanduri for my diet for the last 1 year and also have indulged in various activities hosted by her. The interesting fact is that I never felt like I was on a diet; it was more like a lifestyle change.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Neeta Chitalia',
+    //   title: 'Patient',
+    //   review: "Really happy with the result even after stopping the diet my weight is maintained. I have taken diet from many nutritionists earlier but nothing better than Aditi's. Thank you so much.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Jigar Mehta',
+    //   title: 'Patient',
+    //   review: "Aditi tries to understand the schedule/eating habits of the client and accordingly recommends modifying their eating habits/patterns. I joined to drop a couple of kgs and was able to drop them with ease without major changes to my diet.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Chandresh Soni',
+    //   title: 'Patient',
+    //   review: "It was a very nice experience to avail services from Dr. Aditi. Following the diet advised by her helped me lose my excess weight, maintain required BMI and biological parameters, and feel more energetic.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Ruchi Chatwani',
+    //   title: 'Patient',
+    //   review: "I had consulted Dt. Aditi during my pregnancy as suggested by my Gynac to get a proper diet as I was on the border of getting Gestational Diabetes. Her diet plan helped me stay healthy throughout my pregnancy.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Bhawana Kerkar',
+    //   title: 'Patient',
+    //   review: "Pack health in tiffin! Umang organised a program for parents of all the three branches to solve this never-ending question that parents face. Clinical Dietician and Yoga Trainer - Ms. Aditi Khanduri conducted an interactive session.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Yash Shelatkar',
+    //   title: 'Patient',
+    //   review: "G’day mates, Would love to share my thoughts and feedback on how Orange Clinic is helping me work on my weight. Being someone who used to be a former addict and now clean, I had gained a lot of weight during my recovery process and always had difficulty losing it. Aditi’s approach is different—she understands lifestyle and tailors solutions accordingly.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Ankita Vadher',
+    //   title: 'Patient',
+    //   review: "During the ongoing pandemic, I developed Gestational Diabetes which made my weight increase and posed a threat to the baby inside me. Aditi’s diet plan helped me manage my sugar levels and deliver a healthy baby.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Rupeshkumar Sakpal',
+    //   title: 'Patient',
+    //   review: "Dr. Aditi customises your diet according to your routine—this is really a beautiful part of her treatment. You will not feel stress while doing dieting because, in general, dieting means sacrificing all your favorite foods. Thanks, Dr. Aditi!",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Sharmista Nag',
+    //   title: 'Patient',
+    //   review: "Aditi patiently heard my health concerns, asked detailed questions without rushing, and suggested a plan over email as well. I recovered after following her plan.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Dharmika Chudasma',
+    //   title: 'Patient',
+    //   review: "Being a type 1 diabetic, my HbA1c level was 8.4. She dropped it down to 7.6 in three months. The diet plan was made according to my nutritional needs and personally monitored even the food quantity to be specific. She has done terrific work on me. Thank you so much. God bless you.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Ateet Bansal',
+    //   title: 'Patient',
+    //   review: "Effective and practical diet plan. Lost 10% weight and have been able to sustain it for 6 months now.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Viraj Gandhi',
+    //   title: 'Patient',
+    //   review: "Getting a very good and effective diet program, personally monitored by her. It's really good.",
+    //   rating: 5,
+    // },
+    // {
+
+    // {
+    //   name: 'Sanjay Teli',
+    //   title: 'Patient',
+    //   review: "Aditi is blessed with a positive attitude. She is a subject matter expert in her domain—nutrition and yoga. My son Smit is following her regime only because of her commitment and dedication.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Adish Tolia',
+    //   title: 'Patient',
+    //   review: "Great experience with her. Had to discontinue for personal medical reasons but once fit, would love to join again. Very personalized plans and always ready to help whenever required, just a phone call away!",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Neha Sinha',
+    //   title: 'Patient',
+    //   review: "Aditi gives personal attention to all visiting for diet charts... her diet is very useful and very easy to follow. I will recommend following her advice for leading a healthy life.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Sunita Khanduri',
+    //   title: 'Patient',
+    //   review: "She had all magical tricks to recover from day-to-day problems like headaches, constipation, weaknesses, and many more. Recently, I was suffering from Herpes Zoster... She gave me simple tips and remedies that worked wonders.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Sapna Shah',
+    //   title: 'Patient',
+    //   review: "I am thankful to her as I have lost 12 kg in 3 months. She has given me a very simple diet, but it has worked a lot.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Hemanshi Sureka',
+    //   title: 'Patient',
+    //   review: "The diet chart and the health program are very effective. I am not only able to lose body weight but also have a clean eating habit that is full of health and immunity.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: 'Dhruv Mehta',
+    //   title: 'Patient',
+    //   review: "At first, I thought it would be like other dietitians, recommending extreme diets and starving yourself, but the diet Dr. Aditi Khanduri recommended was quite flexible and nutritious. There was not a single day during my diet that I felt weak or deprived.",
+    //   rating: 5,
+    // }
+  ];
