@@ -4,7 +4,7 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import { ThemeProvider } from "@/components/theme-provider";
 import AnimatedFooter from "@/components/animated-footer";
-
+import { Toaster } from "@/components/ui/sonner";
 
 const roboto = Roboto({
   weight: ['400', '500', '700'],
@@ -39,6 +39,7 @@ export default function RootLayout({
           <NavBar />
           {children}
           <AnimatedFooter/>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

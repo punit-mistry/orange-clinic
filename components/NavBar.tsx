@@ -39,23 +39,19 @@ function Navbar({ className }: { className?: string }) {
       )}
     >
       <Menu setActive={setActive}>
-        <a href="/" className="text-foreground/80 hover:text-foreground transition-colors">
+        <a href="/" className="text-foreground hover:text-foreground transition-colors">
           Home
         </a>
-        <a href="/about" className="text-foreground/80 hover:text-foreground transition-colors">
+        <a href="/about" className="text-foreground hover:text-foreground transition-colors">
           About
         </a>
-        <a href="/services" className="text-foreground/80 hover:text-foreground transition-colors">
+        <a href="/services" className="text-foreground hover:text-foreground transition-colors">
           Services
         </a>
-        <MenuItem setActive={setActive} active={active} item="Recommendations">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby" className="text-foreground/80 hover:text-foreground">Hobby</HoveredLink>
-            <HoveredLink href="/individual" className="text-foreground/80 hover:text-foreground">Individual</HoveredLink>
-            <HoveredLink href="/team" className="text-foreground/80 hover:text-foreground">Team</HoveredLink>
-            <HoveredLink href="/enterprise" className="text-foreground/80 hover:text-foreground">Enterprise</HoveredLink>
-          </div>
-        </MenuItem>
+        <a href="/recommendation" className="text-foreground hover:text-foreground transition-colors">
+          Recommendation Products
+        </a>
+
       </Menu>
     </div>
   );
