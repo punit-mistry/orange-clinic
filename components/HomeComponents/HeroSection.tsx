@@ -62,7 +62,7 @@ const HeroSection = () => {
       />
 
       {/* Content container */}
-      <div className="relative flex items-center justify-between h-full px-4 sm:px-8 md:px-16 z-10">
+      <div className="relative flex items-center flex-col md:flex-row justify-between h-full px-4 sm:px-8 md:px-16 z-10">
         {/* Text content */}
         <div className="flex items-center h-full lg:ml-16 xl:ml-32">
           <div className="max-w-2xl">
@@ -122,7 +122,7 @@ const HeroSection = () => {
         </div>
 
         {/* Rotating Image with animated glow */}
-        <div className="relative hidden md:block">
+        <div className="relative  md:block">
           <motion.div
             animate={{
               boxShadow: [

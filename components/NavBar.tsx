@@ -31,28 +31,28 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 transition-all duration-300 rounded-full font-semibold ",
+        "fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 transition-all duration-300 rounded-full font-semibold hover:shadow-2xl text-clip cursor-pointer",
         scrolled
-          ? " shadow-lg backdrop-blur border  "
+          ? " shadow-lg backdrop-blur border "
           : "bg-transparent",
         className
       )}
     >
-      <Menu setActive={setActive}>
-        <a href="/" className="text-foreground hover:text-foreground transition-colors">
-          Home
+      <div className="flex gap-3 items-center justify-center p-6 ">
+        <a href="/" className="text-foreground hover:text-foreground transform-gpu hover:-translate-y-1 transition-all duration-300 ease-in-out hover:underline-offset-4">
+          Home 
         </a>
-        <a href="/about" className="text-foreground hover:text-foreground transition-colors">
-          About
+        <a href="/about" className="text-foreground hover:text-foreground transform-gpu hover:-translate-y-1 transition-all duration-300 ease-in-out hover:underline-offset-4">
+          About 
         </a>
-        <a href="/services" className="text-foreground hover:text-foreground transition-colors">
-          Services
+        <a href="/services" className="text-foreground hover:text-foreground transform-gpu hover:-translate-y-1 transition-all duration-300 ease-in-out hover:underline-offset-4">
+          Services 
         </a>
-        <a href="/recommendation" className="text-foreground hover:text-foreground transition-colors">
+        <a href="/recommendation" className="text-foreground hover:text-foreground transform-gpu hover:-translate-y-1 transition-all duration-300 ease-in-out hover:underline-offset-4">
           Recommendation Products
         </a>
+      </div>
 
-      </Menu>
     </div>
   );
 }
