@@ -62,10 +62,10 @@ const HeroSection = () => {
       />
 
       {/* Content container */}
-      <div className="relative flex items-center flex-col md:flex-row justify-between h-full px-4 sm:px-8 md:px-16 z-10">
+      <div className="relative flex items-center flex-col-reverse md:flex-row justify-between h-full px-4 sm:px-8 md:px-16 z-10">
         {/* Text content */}
-        <div className="flex items-center h-full lg:ml-16 xl:ml-32">
-          <div className="max-w-2xl">
+        <div className="flex items-center h-full lg:ml-16 xl:ml-32 mt-16 md:mt-0">
+          <div className="max-w-2xl  md:text-left">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -79,7 +79,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-black"
             >
               Hi! This is Aditi Khanduri.
             </motion.h1>
@@ -88,13 +88,13 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-              className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 mt-4"
+              className="flex flex-row items-center  md:justify-start gap-2 sm:gap-3 "
             >
-              <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-black">
+              <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-black">
                 Your
               </span>
               <WordRotate
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-r from-yellow-500 to-orange-400 bg-clip-text text-transparent"
+                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold bg-gradient-to-r from-yellow-500 to-orange-400 bg-clip-text text-transparent"
                 words={[" Wellness", "Better Health", "Healing"]}
               />
             </motion.div>
@@ -103,7 +103,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
-              className="block mt-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-black"
+              className="block  text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-black"
             >
               Journey Starts Here
             </motion.span>
@@ -112,9 +112,9 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
-              className="mt-8"
+              className="mt-8 flex justify-center md:justify-start"
             >
-              <button className="px-6 py-3 bg-gradient-to-r from-yellow-500 to-orange-400 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <button className="px-6 py-3 bg-gradient-to-r from-yellow-500 to-orange-400 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-sm sm:text-base">
                 Start Your Journey
               </button>
             </motion.div>
@@ -122,7 +122,7 @@ const HeroSection = () => {
         </div>
 
         {/* Rotating Image with animated glow */}
-        <div className="relative  md:block">
+        <div className="relative top-30 md:top-0 md:block">
           <motion.div
             animate={{
               boxShadow: [
@@ -147,7 +147,7 @@ const HeroSection = () => {
               duration: 20,
               ease: "linear",
             }}
-            className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px] xl:w-[700px] xl:h-[700px]"
+            className="relative w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px]"
           >
             <div className="absolute inset-0 rounded-full overflow-hidden border-4 border-white/30 shadow-2xl">
               <Image
