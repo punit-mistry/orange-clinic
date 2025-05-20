@@ -31,7 +31,6 @@ export default function ServicesPage() {
 
     // Split the filtered services back into their respective categories
     setFilteredCorporateServices(allFilteredServices.filter((service) => service.id.startsWith("corp-")))
-
     setFilteredClinicalServices(allFilteredServices.filter((service) => service.id.startsWith("clin-")))
   }, [searchQuery])
 
@@ -79,7 +78,7 @@ export default function ServicesPage() {
         </TabsList>
 
         <AnimatePresence mode="wait">
-          <TabsContent value="corporate" className="mt-0">
+          <TabsContent key="corporate-content" value="corporate" className="mt-0">
             {filteredCorporateServices.length > 0 ? (
               <motion.div
                 initial={{ opacity: 0 }}
@@ -99,7 +98,7 @@ export default function ServicesPage() {
             )}
           </TabsContent>
 
-          <TabsContent value="clinical" className="mt-0">
+          <TabsContent key="clinical-content" value="clinical" className="mt-0">
             {filteredClinicalServices.length > 0 ? (
               <motion.div
                 initial={{ opacity: 0 }}

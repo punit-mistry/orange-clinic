@@ -1,13 +1,26 @@
 'use client'
-import React from 'react'
-import RecommendationProducts from '@/components/recommendation/RecommendationProducts'
-import RecommendataionFaq from '@/components/recommendation/RecommendationFaq'
+
+import React, { Suspense } from 'react'
+import dynamic from 'next/dynamic'
+
+const RecommendationProducts = dynamic(() => import('@/components/recommendation/RecommendationProducts'), {
+  loading: () => <div className="min-h-[400px] animate-pulse bg-gray-100 rounded-lg" />
+})
+
+const RecommendataionFaq = dynamic(() => import('@/components/recommendation/RecommendationFaq'), {
+  loading: () => <div className="min-h-[300px] animate-pulse bg-gray-100 rounded-lg" />
+})
+
 const RecommendationPage = () => {
   return (
-    <div>
+    <main className="min-h-screen">
+      <Suspense fallback={<div className="min-h-[400px] animate-pulse bg-gray-100 rounded-lg" />}>
         <RecommendationProducts />
-        <RecommendataionFaq/>
-    </div>
+      </Suspense>
+      <Suspense fallback={<div className="min-h-[300px] animate-pulse bg-gray-100 rounded-lg" />}>
+        <RecommendataionFaq />
+      </Suspense>
+    </main>
   )
 }
 

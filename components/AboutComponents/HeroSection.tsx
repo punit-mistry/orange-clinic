@@ -25,7 +25,7 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-white">
+    <div className="relative min-h-screen w-full overflow-hidden ">
       {/* Animated background */}
       <div ref={backgroundRef} className="absolute inset-0 transition-all duration-500 ease-in-out" />
 
@@ -59,15 +59,15 @@ export default function HeroSection() {
         <div className="grid gap-8 md:grid-cols-2 items-center">
           {/* Image section */}
           <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
-            <Card className="overflow-hidden border-none shadow-lg">
+            <Card className="overflow-hidden border-none shadow-lg bg-orange-400/50">
               <CardContent className="p-0">
-                <div className="aspect-square bg-gray-200 relative overflow-hidden">
+                <div className="aspect-square  relative overflow-hidden">
                   <img
-                    src="/placeholder.svg?key=qo3qu"
+                    src="/about-hero.png"
                     alt="Orange Clinic Wellness Center"
                     className="object-cover w-full h-full"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-tr from-yellow-500/20 to-orange-400/20" />
+                  {/* <div className="absolute inset-0 bg- from-yellow-500/20 to-orange-400/20" /> */}
                 </div>
               </CardContent>
             </Card>
