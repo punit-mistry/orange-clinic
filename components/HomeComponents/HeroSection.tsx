@@ -1,11 +1,67 @@
 "use client";
 
-
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { WordRotate } from "@/components/magicui/word-rotate";
 import MealImage from '@/public/meal.png'
+import { useEffect, useState } from "react";
+
 const HeroSection = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return (
+      <div className="relative w-screen h-screen overflow-hidden bg-gradient-to-br from-white to-blue-50">
+        {/* Static placeholder during SSR */}
+        <div className="relative flex items-center flex-col-reverse md:flex-row justify-between h-full px-4 sm:px-8 md:px-16 z-10">
+          <div className="flex items-center h-full lg:ml-16 xl:ml-32 mt-16 md:mt-0">
+            <div className="max-w-2xl md:text-left">
+              <div className="mb-4 text-sm md:text-base font-medium text-orange-400 tracking-wider">
+                WELLNESS SPECIALIST
+              </div>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-black">
+                Hi! This is Aditi Khanduri.
+              </h1>
+              <div className="flex flex-row items-center md:justify-start gap-2 sm:gap-3">
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-black">
+                  Your
+                </span>
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold bg-gradient-to-r from-yellow-500 to-orange-400 bg-clip-text text-transparent">
+                  Wellness
+                </span>
+              </div>
+              <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-black">
+                Journey Starts Here
+              </span>
+              <div className="mt-8 flex justify-center md:justify-start">
+                <button className="px-6 py-3 bg-gradient-to-r from-yellow-500 to-orange-400 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-sm sm:text-base">
+                  Start Your Journey
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="relative top-30 md:top-0 md:block">
+            <div className="relative w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px]">
+              <div className="absolute inset-0 rounded-full overflow-hidden border-4 border-white/30 shadow-2xl">
+                <Image
+                  src={MealImage}
+                  alt="Aditi Khanduri - Wellness Specialist"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-gradient-to-br from-white to-blue-50">
       {/* Animated background elements */}
