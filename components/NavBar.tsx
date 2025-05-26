@@ -42,7 +42,7 @@ function Navbar({ className }: { className?: string }) {
     
     <button
             onClick={toggleSidebar}
-            className="md:hidden fixed left-4 transform -translate-y-1/2 z-50 top-8"
+            className="md:hidden fixed left-4 transform -translate-y-1/2 z-51 top-8"
             aria-label="Toggle navigation menu"
           >
             <div className="w-10 h-10 relative group">
