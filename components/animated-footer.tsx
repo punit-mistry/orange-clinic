@@ -250,7 +250,7 @@ export default function AnimatedFooter() {
                 repeatType: "reverse",
               }}
             >
-              © {currentYear} Your Company. All rights reserved.
+              © {currentYear} Orange Clinic. All rights reserved.
             </motion.div>
           </div>
         </motion.div>
