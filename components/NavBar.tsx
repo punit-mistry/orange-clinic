@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   HoveredLink,
   Menu,
@@ -21,6 +22,7 @@ function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,16 +71,40 @@ function Navbar({ className }: { className?: string }) {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex gap-3 items-center justify-center">
-            <Link href="/" className="text-foreground hover:text-foreground transform-gpu hover:-translate-y-1 transition-all duration-300 ease-in-out hover:underline-offset-4">
+            <Link 
+              href="/" 
+              className={cn(
+                "transform-gpu hover:scale-105 transition-all ease-in-out hover:underline-offset-4",
+                pathname === "/" ? "text-orange-500" : "text-foreground hover:text-foreground"
+              )}
+            >
               Home 
             </Link>
-            <Link href="/about" className="text-foreground hover:text-foreground transform-gpu hover:-translate-y-1 transition-all duration-300 ease-in-out hover:underline-offset-4">
+            <Link 
+              href="/about" 
+              className={cn(
+                "transform-gpu hover:scale-105 transition-all ease-in-out hover:underline-offset-4",
+                pathname === "/about" ? "text-orange-500" : "text-foreground hover:text-foreground"
+              )}
+            >
               About 
             </Link>
-            <Link href="/services" className="text-foreground hover:text-foreground transform-gpu hover:-translate-y-1 transition-all duration-300 ease-in-out hover:underline-offset-4">
+            <Link 
+              href="/services" 
+              className={cn(
+                "transform-gpu hover:scale-105 transition-all ease-in-out hover:underline-offset-4",
+                pathname === "/services" ? "text-orange-500" : "text-foreground hover:text-foreground"
+              )}
+            >
               Services 
             </Link>
-            <Link href="/recommendation" className="text-foreground hover:text-foreground transform-gpu hover:-translate-y-1 transition-all duration-300 ease-in-out hover:underline-offset-4">
+            <Link 
+              href="/recommendation" 
+              className={cn(
+                "transform-gpu hover:scale-105 transition-all ease-in-out hover:underline-offset-4",
+                pathname === "/recommendation" ? "text-orange-500" : "text-foreground hover:text-foreground"
+              )}
+            >
               Recommendation Products
             </Link>
           </div>
@@ -95,28 +121,40 @@ function Navbar({ className }: { className?: string }) {
         <div className="flex flex-col p-6 space-y-4 mt-20">
           <Link
             href="/"
-            className="text-foreground hover:text-foreground transition-all duration-300 ease-in-out hover:underline-offset-4"
+            className={cn(
+              "transition-all duration-300 ease-in-out hover:underline-offset-4",
+              pathname === "/" ? "text-orange-500" : "text-foreground hover:text-foreground"
+            )}
             onClick={() => setIsOpen(false)}
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="text-foreground hover:text-foreground transition-all duration-300 ease-in-out hover:underline-offset-4"
+            className={cn(
+              "transition-all duration-300 ease-in-out hover:underline-offset-4",
+              pathname === "/about" ? "text-orange-500" : "text-foreground hover:text-foreground"
+            )}
             onClick={() => setIsOpen(false)}
           >
             About
           </Link>
           <Link
             href="/services"
-            className="text-foreground hover:text-foreground transition-all duration-300 ease-in-out hover:underline-offset-4"
+            className={cn(
+              "transition-all duration-300 ease-in-out hover:underline-offset-4",
+              pathname === "/services" ? "text-orange-500" : "text-foreground hover:text-foreground"
+            )}
             onClick={() => setIsOpen(false)}
           >
             Services
           </Link>
           <Link
             href="/recommendation"
-            className="text-foreground hover:text-foreground transition-all duration-300 ease-in-out hover:underline-offset-4"
+            className={cn(
+              "transition-all duration-300 ease-in-out hover:underline-offset-4",
+              pathname === "/recommendation" ? "text-orange-500" : "text-foreground hover:text-foreground"
+            )}
             onClick={() => setIsOpen(false)}
           >
             Recommendation Products

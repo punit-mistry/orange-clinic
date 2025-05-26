@@ -1,30 +1,36 @@
 import React, { useState } from 'react';
 import { toast } from 'sonner';
 import { Button } from '../ui/button';
-
+import Image from 'next/image';
+import Magnesium from "@/public/recommendation/Magnesium-Bisglycinate-Powder.png"
+import ActiveBComplex from "@/public/recommendation/Active-B-Complex.png"
+import VitaminD3K2inMCTOil from "@/public/recommendation/Vitamin-D3-K2-in-MCT-Oil.png"
+import Maiva from "@/public/recommendation/Maiva.png"
 const recommendedProducts = [
   {
     name: "Magnesium",
     url: "https://www.ithrive.shop/products/magnesium?ref=FIT2025",
-    image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=500&auto=format&fit=crop&q=60",
+    image: Magnesium,
     description: "Premium quality magnesium supplement for optimal health"
   },
   {
     name: "Active B-Complex",
     url: "https://www.ithrive.shop/products/b-complex?ref=FIT2025",
-    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&auto=format&fit=crop&q=60",
+    image: ActiveBComplex,
     description: "Advanced B-vitamin complex for energy and vitality"
   },
   {
     name: "Vitamin D3 + K2 in MCT Oil",
     url: "https://www.ithrive.shop/products/liquid-vitamin-d3-k2-drops?ref=FIT2025",
-    image: "https://images.unsplash.com/photo-1584302179602-e4c3d3fd629d?w=500&auto=format&fit=crop&q=60",
+    image: VitaminD3K2inMCTOil,
     description: "Luxury vitamin D3 and K2 in premium MCT oil"
   },
   {
     name: "Maiva",
     url: null,
-    image: "https://images.unsplash.com/photo-1584302179602-e4c3d3fd629d?w=500&auto=format&fit=crop&q=60",
+    image: Maiva,
+    
+    // image: "https://images.unsplash.com/photo-1584302179602-e4c3d3fd629d?w=500&auto=format&fit=crop&q=60",
     description: "Exclusive wellness products for the discerning individual",
     coupon_code: 'MAIVA3023',
     redirect_url:'https://www.maiva.co/?ref=MAIVA3023'
@@ -48,7 +54,6 @@ const RecommendationProducts = () => {
           padding: '16px',
         },
       });
-      setTimeout(() => setCopiedCode(null), 2000);
     } catch (err) {
       toast.error('Failed to copy code. Please try again.', {
         duration: 2000,
@@ -79,10 +84,13 @@ const RecommendationProducts = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-orange-400/20 to-yellow-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500 animate-pulse"></div>
               <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.12)]  transition-all duration-500  transform hover:-translate-y-2 border border-gray-100 hover:border-orange-200">
                 <div className="aspect-w-16 aspect-h-9 w-full overflow-hidden">
-                  <img
+                  <Image
                     src={product.image}
                     alt={product.name}
                     className="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-700"
+                    width={1000}
+                    height={1000}
+                    priority
                   />
                   {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div> */}
                 </div>

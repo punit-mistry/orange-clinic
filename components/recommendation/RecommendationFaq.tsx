@@ -11,11 +11,7 @@ import { BackgroundBeams } from "@/components/background-beams";
 
 export default function FAQPage() {
   const handleWhatsAppContact = () => {
-    const phoneNumber = "8286075880";
-    const message = "Hey, I want info on this.";
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      message
-    )}`;
+    const whatsappUrl = `https://wa.me/919821790372?text=Hi%20Aditi!%20%F0%9F%91%8B%20I'm%20interested%20in%20learning%20more%20about%20my%20diet%20%F0%9F%A5%97%20and%20how%20to%20improve%20it%20%F0%9F%92%AA.%20I'd%20love%20to%20get%20your%20guidance%20%F0%9F%99%8F%20and%20see%20how%20you%20can%20help!%20%F0%9F%98%8A`;
     window.open(whatsappUrl, "_blank");
   };
 

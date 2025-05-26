@@ -5,7 +5,6 @@ import NavBar from "@/components/NavBar";
 import { ThemeProvider } from "@/components/theme-provider";
 import AnimatedFooter from "@/components/animated-footer";
 import { Toaster } from "@/components/ui/sonner";
-
 const roboto = Roboto({
   weight: ['400', '500', '700'],
   subsets: ['latin'],
@@ -20,12 +19,12 @@ export const metadata: Metadata = {
   description: 'Welcome to Orange Clinic, where we provide exceptional healthcare services with a focus on patient well-being and professional medical care.',
   keywords: 'healthcare, medical clinic, Orange Clinic, medical services, healthcare provider',
   openGraph: {
-    title: 'Orange Clinic - Your Trusted Healthcare Partner',
+    title: 'Orange Clinic - Your Trusted Healthcare Partner', 
     description: 'Welcome to Orange Clinic, where we provide exceptional healthcare services.',
     type: 'website',
   },
   icons: {
-    icon: "../public/logo.png", // or .ico, .svg, etc.
+      icon: "/logo.png" // or .ico, .svg, etc.
   },
 };
 
@@ -46,7 +45,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <NavBar />
-          {children}
+            {children}
           <AnimatedFooter/>
           <Toaster />
         </ThemeProvider>

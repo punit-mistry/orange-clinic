@@ -9,6 +9,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { testimonials } from '@/lib/testimonials-data';
 import { Button } from "@/components/ui/button";
+import Autoplay from 'embla-carousel-autoplay';
 
 // Lazy load the Star component
 const Star = lazy(() => import('./Star'));
@@ -62,6 +63,13 @@ const ClientFeedback = React.memo(() => {
               align: "start",
               loop: true,
             }}
+            plugins={[
+              Autoplay({
+                delay: 2000,
+                stopOnInteraction: false,
+                stopOnMouseEnter: true,
+              })
+            ]}
             className="w-full"
           >
             <CarouselContent>

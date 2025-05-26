@@ -164,11 +164,21 @@ export default function AnimatedFooter() {
             <motion.div variants={itemVariants} className="space-y-4">
               <h3 className="text-lg font-semibold text-white">Quick Links</h3>
               <ul className="space-y-2">
-                {["Contact Us", "Our Team", "Blog Posts", "FAQs", "Wellness Tips"].map((item, index) => (
+                {[
+                  { text: "Home", href: "/" },
+                  { text: "About Us", href: "/about" },
+                  { text: "Services", href: "/services" },
+                  { text: "Recommendations", href: "/recommendations" },
+                  { text: "Chat on WhatsApp", href: "https://wa.me/919821790372?text=Hi%20Aditi!%20%F0%9F%91%8B%20I'm%20interested%20in%20learning%20more%20about%20my%20diet%20%F0%9F%A5%97%20and%20how%20to%20improve%20it%20%F0%9F%92%AA.%20I'd%20love%20to%20get%20your%20guidance%20%F0%9F%99%8F%20and%20see%20how%20you%20can%20help!%20%F0%9F%98%8A", external: true }
+                ].map((item, index) => (
                   <motion.li key={index} whileHover="hover" variants={linkVariants}>
-                    <Link href="#" className="text-white/90 hover:text-white flex items-center group">
+                    <Link 
+                      href={item.href} 
+                      className="text-white/90 hover:text-white flex items-center group"
+                      {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                    >
                       <ChevronRight className="h-4 w-4 mr-1 transition-transform group-hover:translate-x-1" />
-                      {item}
+                      {item.text}
                     </Link>
                   </motion.li>
                 ))}

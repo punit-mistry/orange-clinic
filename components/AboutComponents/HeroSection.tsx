@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Package } from "lucide-react"
+import Image from "next/image"
 
 export default function HeroSection() {
   const backgroundRef = useRef<HTMLDivElement>(null)
@@ -62,10 +63,13 @@ export default function HeroSection() {
             <Card className="overflow-hidden border-none shadow-lg bg-orange-400/50">
               <CardContent className="p-0">
                 <div className="aspect-square  relative overflow-hidden">
-                  <img
+                  <Image
                     src="/about-hero.png"
                     alt="Orange Clinic Wellness Center"
                     className="object-cover w-full h-full"
+                    width={1000}
+                    height={1000}
+                    priority
                   />
                   {/* <div className="absolute inset-0 bg- from-yellow-500/20 to-orange-400/20" /> */}
                 </div>
@@ -114,7 +118,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.8 }}
             >
-              <motion.button
+              <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -123,7 +127,7 @@ export default function HeroSection() {
                 >
                   Book Appointment
                 </Button>
-              </motion.button>
+              </motion.div>
               <Button variant="outline" className="border-yellow-500 text-yellow-600 hover:bg-yellow-50 hover:text-black">
                 Learn More
               </Button>
