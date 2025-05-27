@@ -60,7 +60,7 @@ function Navbar({ className }: { className?: string }) {
         className={cn(
           "fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 transition-all duration-300 rounded-full font-semibold hover:shadow-2xl text-clip cursor-pointer",
           scrolled
-            ? "shadow-lg backdrop-blur border"
+            ? "md:shadow-lg md:backdrop-blur md:border"
             : "bg-transparent",
           className
         )}
