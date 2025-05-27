@@ -185,38 +185,7 @@ export default function AnimatedFooter() {
               </ul>
             </motion.div>
 
-            {/* Newsletter subscription */}
-            <motion.div variants={itemVariants} className="space-y-4">
-              <h3 className="text-lg font-semibold text-white">Join</h3>
-              <form onSubmit={handleSubmit} className="space-y-2">
-                <div className="flex">
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Your Email Here"
-                    required
-                    className="px-4 py-2 rounded-l-md w-full border focus:outline-none focus:ring-2 focus:ring-yellow-300 text-gray-800"
-                  />
-                  <motion.button
-                    type="submit"
-                    className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-r-md flex items-center justify-center"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Send className="h-4 w-4 mr-1" />
-                    Join
-                  </motion.button>
-                </div>
-                <p className="text-sm text-white/80">
-                  By subscribing, you agree to our{" "}
-                  <Link href="#" className="underline hover:text-white">
-                    Privacy Policy
-                  </Link>
-                  .
-                </p>
-              </form>
-            </motion.div>
+       
           </div>
 
           {/* Divider */}
