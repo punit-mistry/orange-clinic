@@ -3,9 +3,9 @@ import { motion, useInView } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { Button } from '../ui/button';
 import Image from 'next/image';
-import { corporateServices } from '@/lib/services-data';
+import { corporateServices,clinicalServices } from '@/lib/services-data';
 
-const services = corporateServices.slice(0, 3);
+const services = [...corporateServices.slice(0, 1),...clinicalServices.slice(0, 2)];
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },

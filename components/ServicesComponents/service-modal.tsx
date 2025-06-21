@@ -52,9 +52,9 @@ export default function ServiceModal({ isOpen, onClose, service }: ServiceModalP
             <div className="mt-4 sm:mt-6 flex justify-center md:justify-end sticky bottom-0 bg-white pt-2">
               <Button 
                 onClick={() => window.open("https://wa.me/919821790372?text=Hi%20Aditi!%20%F0%9F%91%8B%20I'm%20interested%20in%20learning%20more%20about%20my%20diet%20%F0%9F%A5%97%20and%20how%20to%20improve%20it%20%F0%9F%92%AA.%20I'd%20love%20to%20get%20your%20guidance%20%F0%9F%99%8F%20and%20see%20how%20you%20can%20help!%20%F0%9F%98%8A", "_blank")}
-                className="w-full sm:w-auto bg-black hover:bg-gray-800 text-white text-sm sm:text-base py-2 sm:py-3 px-4 sm:px-6"
+                className="w-full sm:w-auto bg-black hover:bg-gray-800 text-white text-sm sm:text-base py-2 sm:py-3 px-4 sm:px-6 hover:cursor-pointer"
               >
-                Contact Me
+                Get Quote
               </Button>
             </div>
           </div>
