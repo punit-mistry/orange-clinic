@@ -211,18 +211,18 @@ export default function AnimatedFooter() {
             {/* Google Maps */}
             <motion.div
               variants={itemVariants}
-              className="group overflow-hidden w-fit"
+              className="group w-full max-w-4xl mx-auto"
             >
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.5647757743022!2d72.83445967596029!3d19.21420264761787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6cdcc94ef35%3A0x795a2947e104e8fb!2sOrange%20Clinic!5e0!3m2!1sen!2sin!4v1750532095544!5m2!1sen!2sin"
-                width="600"
-                height="250"
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Orange Clinic Location on Google Maps"
-                className="grayscale group-hover:grayscale-0 transition-all duration-500 ease-in-out"
-              ></iframe>
+              <div className="relative w-full pt-[42%] overflow-hidden rounded-md shadow-lg">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.5647757743022!2d72.83445967596029!3d19.21420264761787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6cdcc94ef35%3A0x795a2947e104e8fb!2sOrange%20Clinic!5e0!3m2!1sen!2sin!4v1750532095544!5m2!1sen!2sin"
+                  className="absolute top-0 left-0 w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 ease-in-out border-0"
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Orange Clinic Location on Google Maps"
+                ></iframe>
+              </div>
             </motion.div>
           </div>
 
