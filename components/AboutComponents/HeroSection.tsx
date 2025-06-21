@@ -102,16 +102,21 @@ export default function HeroSection() {
               Discover the Heart and Soul of Orange Clinic: Your Wellness Journey Begins Here
             </motion.h1>
 
-            <motion.p
-              className="text-gray-700 leading-relaxed"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-            >
-              At Orange Clinic, we believe in a holistic approach to health and wellness. Our mission is to empower
-              individuals through personalized care, fostering a community that values natural healing and vitality.
-            </motion.p>
-
+             <motion.p
+                className="text-gray-700 leading-relaxed relative z-10"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+              >
+                I have been working with sectors like leading, Corporate, Hospitals, Clinics, and International Schools
+                for the last 10 years. My vision is to create awareness amongst the crowd about the importance of
+                healthy eating patterns so that they know the true strength and immense power of naturally available
+                food and how it can work over one's health. A future vision is to have a Better India = Fitter India. My
+                expertise is in managing cases like Metabolic diseases, Weight management, Diabetes management,
+                Gestational Diabetes, PCOD (Polly Cystic Ovarian Disease), Hypothyroidism, Nutrition support during
+                Cancer treatment, Nutrition during and post pregnancy, and nutrition & growth chart plotting for kids
+                and much more.
+              </motion.p>
             <motion.div
               className="flex flex-wrap gap-4 pt-4"
               initial={{ opacity: 0, y: 20 }}

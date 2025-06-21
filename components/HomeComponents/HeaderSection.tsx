@@ -95,8 +95,10 @@ import ProfilePic from '@/public/profile-pic.jpeg';
 import React from "react"
 import Image from "next/image"
 import { motion, useInView } from "framer-motion"
+import { useRouter } from "next/navigation"
 
 const HeaderSection = () => {
+  const router = useRouter()
   const leftRef = React.useRef(null)
   const rightRef = React.useRef(null)
   const isLeftInView = useInView(leftRef, { once: true, amount: 0.3 })
@@ -155,6 +157,7 @@ const HeaderSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isLeftInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ delay: 0.8, duration: 0.8 }}
+             onClick={() => router.push('/about')}
           >
             Learn More
           </motion.button>

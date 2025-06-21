@@ -1,24 +1,24 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Send, ChevronRight } from "lucide-react"
-import { motion } from "framer-motion"
-import Logo from '@/public/logo.png'
-import Image from "next/image"
+import { useState } from "react";
+import Link from "next/link";
+import { Send, ChevronRight } from "lucide-react";
+import { motion } from "framer-motion";
+import Logo from "@/public/logo.png";
+import Image from "next/image";
 export default function AnimatedFooter() {
-  const [email, setEmail] = useState("")
-  const currentYear = new Date().getFullYear()
+  const [email, setEmail] = useState("");
+  const currentYear = new Date().getFullYear();
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle newsletter subscription
-    console.log("Subscribing email:", email)
-    setEmail("")
+    console.log("Subscribing email:", email);
+    setEmail("");
     // Add actual subscription logic here
-  }
+  };
 
   // Animation variants
   const containerVariants = {
@@ -29,7 +29,7 @@ export default function AnimatedFooter() {
         staggerChildren: 0.1,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
@@ -41,7 +41,7 @@ export default function AnimatedFooter() {
         stiffness: 100,
       },
     },
-  }
+  };
 
   const linkVariants = {
     hover: {
@@ -49,7 +49,7 @@ export default function AnimatedFooter() {
       color: "#f59e0b", // yellow-500
       transition: { duration: 0.2 },
     },
-  }
+  };
 
   return (
     <footer className="relative overflow-hidden">
@@ -128,14 +128,23 @@ export default function AnimatedFooter() {
           repeatType: "reverse",
         }}
       >
-        <motion.div className="max-w-7xl mx-auto" variants={containerVariants} initial="hidden" animate="visible">
+        <motion.div
+          className="max-w-7xl mx-auto"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {/* Logo and company info */}
             <motion.div variants={itemVariants} className="space-y-4">
               <motion.div
                 className="text-2xl font-bold text-white"
                 animate={{
-                  textShadow: ["0 0 5px rgba(0,0,0,0)", "0 0 15px rgba(255,255,255,0.5)", "0 0 5px rgba(0,0,0,0)"],
+                  textShadow: [
+                    "0 0 5px rgba(0,0,0,0)",
+                    "0 0 15px rgba(255,255,255,0.5)",
+                    "0 0 5px rgba(0,0,0,0)",
+                  ],
                 }}
                 transition={{
                   duration: 3,
@@ -143,7 +152,11 @@ export default function AnimatedFooter() {
                   repeatType: "reverse",
                 }}
               >
-              <Image src={Logo} alt="logo"  className=" rounded-full bg-transparent w-24 h-28 hover:animate-spin cursor-pointer" />
+                <Image
+                  src={Logo}
+                  alt="logo"
+                  className=" rounded-full bg-transparent w-24 h-28 hover:animate-spin cursor-pointer"
+                />
               </motion.div>
               <motion.p
                 className="text-white/90"
@@ -161,7 +174,7 @@ export default function AnimatedFooter() {
             </motion.div>
 
             {/* Navigation links */}
-            <motion.div variants={itemVariants} className="space-y-4">
+            <motion.div variants={itemVariants} className="space-y-4 ">
               <h3 className="text-lg font-semibold text-white">Quick Links</h3>
               <ul className="space-y-2">
                 {[
@@ -169,13 +182,23 @@ export default function AnimatedFooter() {
                   { text: "About Us", href: "/about" },
                   { text: "Services", href: "/services" },
                   { text: "Recommendations", href: "/recommendation" },
-                  { text: "Chat on WhatsApp", href: "https://wa.me/919821790372?text=Hi%20Aditi!%20%F0%9F%91%8B%20I'm%20interested%20in%20learning%20more%20about%20my%20diet%20%F0%9F%A5%97%20and%20how%20to%20improve%20it%20%F0%9F%92%AA.%20I'd%20love%20to%20get%20your%20guidance%20%F0%9F%99%8F%20and%20see%20how%20you%20can%20help!%20%F0%9F%98%8A", external: true }
+                  {
+                    text: "Chat on WhatsApp",
+                    href: "https://wa.me/919821790372?text=Hi%20Aditi!%20%F0%9F%91%8B%20I'm%20interested%20in%20learning%20more%20about%20my%20diet%20%F0%9F%A5%97%20and%20how%20to%20improve%20it%20%F0%9F%92%AA.%20I'd%20love%20to%20get%20your%20guidance%20%F0%9F%99%8F%20and%20see%20how%20you%20can%20help!%20%F0%9F%98%8A",
+                    external: true,
+                  },
                 ].map((item, index) => (
-                  <motion.li key={index} whileHover="hover" variants={linkVariants}>
-                    <Link 
-                      href={item.href} 
+                  <motion.li
+                    key={index}
+                    whileHover="hover"
+                    variants={linkVariants}
+                  >
+                    <Link
+                      href={item.href}
                       className="text-white/90 hover:text-white flex items-center group"
-                      {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                      {...(item.external
+                        ? { target: "_blank", rel: "noopener noreferrer" }
+                        : {})}
                     >
                       <ChevronRight className="h-4 w-4 mr-1 transition-transform group-hover:translate-x-1" />
                       {item.text}
@@ -185,7 +208,22 @@ export default function AnimatedFooter() {
               </ul>
             </motion.div>
 
-       
+            {/* Google Maps */}
+            <motion.div
+              variants={itemVariants}
+              className="group overflow-hidden w-fit"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.5647757743022!2d72.83445967596029!3d19.21420264761787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6cdcc94ef35%3A0x795a2947e104e8fb!2sOrange%20Clinic!5e0!3m2!1sen!2sin!4v1750532095544!5m2!1sen!2sin"
+                width="600"
+                height="250"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Orange Clinic Location on Google Maps"
+                className="grayscale group-hover:grayscale-0 transition-all duration-500 ease-in-out"
+              ></iframe>
+            </motion.div>
           </div>
 
           {/* Divider */}
@@ -198,14 +236,22 @@ export default function AnimatedFooter() {
 
           {/* Bottom section */}
           <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-white/80">
-            <motion.div className="flex space-x-4 mb-4 sm:mb-0" variants={containerVariants}>
-              {["Privacy Policy", "Terms of Use", "Cookie Settings"].map((item, index) => (
-                <motion.div key={index} variants={itemVariants}>
-                  <Link href="#" className="hover:text-white hover:underline underline-offset-2">
-                    {item}
-                  </Link>
-                </motion.div>
-              ))}
+            <motion.div
+              className="flex space-x-4 mb-4 sm:mb-0"
+              variants={containerVariants}
+            >
+              {["Privacy Policy", "Terms of Use", "Cookie Settings"].map(
+                (item, index) => (
+                  <motion.div key={index} variants={itemVariants}>
+                    <Link
+                      href="#"
+                      className="hover:text-white hover:underline underline-offset-2"
+                    >
+                      {item}
+                    </Link>
+                  </motion.div>
+                )
+              )}
             </motion.div>
             <motion.div
               variants={itemVariants}
@@ -225,5 +271,5 @@ export default function AnimatedFooter() {
         </motion.div>
       </motion.div>
     </footer>
-  )
+  );
 }

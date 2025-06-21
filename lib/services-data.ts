@@ -162,7 +162,7 @@ export interface ServiceDetails {
       id: "clin-3",
       title: "Poly Cystic Ovarian Disease (PCOD)",
       description: "This condition brings a metabolic change in hormone system + body composition + the way food is metabolized. PCOD makes it more difficult for the individual to lose weight, due to the imbalance of insulin production & irregular periods. Diet modification is a potent way of supporting the treatment of PCOD, which helps to manage the symptoms.",
-      image: "https://images.unsplash.com/photo-1716833322888-9c6e7549fa7d?q=80&w=1929&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://media.istockphoto.com/id/1416791078/photo/hands-holding-uterus-female-reproductive-system-woman-health-pcos-gynecologic-and-cervix.jpg?s=612x612&w=0&k=20&c=Il5JtJEeSypvfJaactaCCcuB9kAjgBftiZXQlJIVhwM=",
       details: {
         title: "Poly Cystic Ovarian Disease (PCOD)",
         description:
@@ -180,7 +180,7 @@ export interface ServiceDetails {
       id: "clin-4",
       title: "Gestational Diabetes (GDM)",
       description: "Gestational diabetes is when high sugar levels are detected during pregnancy. Maintaining a healthy balanced diet is utmost important for baby’s development in the womb and mother’s health. We consider mother’s requirement and cravings; thus, the diet is planned with multiple options and substitutes..",
-      image: "https://images.unsplash.com/photo-1637330765988-89f4be4ec090?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://media.istockphoto.com/id/1436142520/photo/pregnant-young-woman-injecting-insulin-with-insulin-pen.jpg?s=612x612&w=0&k=20&c=27aj9o2NDct1_9g2GxCpQFI3Yr9Iu6ear0MjJyOVnBI=",
       details: {
         title: "Gestational Diabetes (GDM)",
         description:
@@ -197,7 +197,7 @@ export interface ServiceDetails {
       id: "clin-5",
       title: "Cancer",
       description: "Diet plays a particularly important role during cancer treatment. To successfully survive the chemotherapy / radiation therapy, one needs a strong diet backup. Scientific-based nutrition therapy during cancer treatment determines better recovery during and post-treatment. Diet recommendations will also help reduce side-effects commonly seen during cancer treatment.",
-      image: "https://images.unsplash.com/photo-1578496781379-7dcfb995293d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://media.istockphoto.com/id/1756374558/photo/young-asian-people-taking-care-health-help-cancer-patients-sitting-in-wheelchair-outside-home.jpg?s=612x612&w=0&k=20&c=1ueE-UmIPUMQmq2e6LyNOUaKVd1cDH3ZMQ-Hf0AqMow=",
       details: {
         title: "Cancer",
         description: "Diet plays a particularly important role during cancer treatment. To successfully survive the chemotherapy / radiation therapy, one needs a strong diet backup. Scientific-based nutrition therapy during cancer treatment determines better recovery during and post-treatment. Diet recommendations will also help reduce side-effects commonly seen during cancer treatment.",
@@ -215,7 +215,7 @@ export interface ServiceDetails {
       id: "clin-6",
       title: "Thyroid",
       description: "Thyroid is an inflammatory disease, where anti-inflammatory food helps the body to fight the condition better. Even being on thyroid medication if you face symptoms like weakness, hairfall, low hemoglobin, weight gain, etc., then our nutrition counseling will help you manage these symptoms well.",
-      image: "https://images.unsplash.com/photo-1581288798017-a783870e9966?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://media.istockphoto.com/id/1285293226/photo/woman-showing-painted-thyroid-gland-on-her-neck-enlarged-butterfly-shaped-thyroid-gland.jpg?s=612x612&w=0&k=20&c=QnJYfWdhSehLlRmud-efDVDVNIVTk3B2TRhRxwiMK6g=",
       details: {
         title: "Thyroid",
         description:
