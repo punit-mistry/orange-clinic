@@ -125,43 +125,58 @@ export default function FAQPage() {
 
 const faqItems = [
   {
-    question: "What are your most popular products?",
+    question: "How to book a session with you?",
     answer:
-      "Our most popular products include our premium skincare line, organic supplements, and wellness accessories. These items have received the highest ratings and positive feedback from our customers.",
+      "Once you have read about my services and selected what exactly you want to go ahead with, you can click the “Get started” button and fill out the pre-assessment form. Once I receive the form, I will share payment packages and details on your registered WhatsApp number. Do share the screenshot of payment completion, post which you will get a confirmation message depending on whether you have taken an online or an offline session.",
   },
   {
-    question: "How do I track my order?",
+    question: "Do you provide a different diet plan for every single day/week?",
     answer:
-      "You can track your order by logging into your account and visiting the 'Order History' section. Alternatively, you can use the tracking number provided in your shipping confirmation email.",
+      "I aim to create a lifestyle change, and your 1st session’s diet plan contains enough options till your next follow-up. In each follow-up, I try to improve your macro & micro-nutrient composition and add options that help you enjoy taste while you are on a health goal. Follow-ups are planned according to the patient’s requirements, which can vary between weekly and fortnightly.",
   },
   {
-    question: "What payment methods do you accept?",
+    question: "Do you only recommend a vegetarian meal?",
     answer:
-      "We accept all major credit cards (Visa, Mastercard, American Express), PayPal, and various digital wallets including Apple Pay and Google Pay. We also offer buy-now-pay-later options through select partners.",
+      "No, the diet plan is based on the client’s food choice, either vegetarian or non-vegetarian. I do not encourage or discourage any of our clients from choosing veg or non-veg food. Clients can be either vegetarian or non-vegetarian—we help them enjoy their food type and achieve their health goals.",
   },
   {
-    question: "Do you ship internationally?",
+    question: "Do you only recommend boiled food?",
     answer:
-      "Yes, we ship to most countries worldwide. International shipping rates and delivery times vary depending on the destination. You can view specific shipping information during checkout.",
+      "No, it’s a myth that to lose weight or achieve a health goal, one must eat only boiled or non-tasty food.",
   },
   {
-    question: "What is your return policy?",
+    question: "Do we get an extension to our subscription?",
     answer:
-      "We offer a 30-day satisfaction guarantee on most products. If you're not completely satisfied, you can return unused items in their original packaging for a full refund or exchange. Custom or personalized items may have different return policies.",
+      "Ideally, no, as discounts and package models are curated with the assumption that the client will be consistent and have timely follow-ups. To know more, ask this question during your session.",
   },
   {
-    question: "Are your products cruelty-free?",
+    question: "How are your online sessions conducted?",
     answer:
-      "Yes, all our products are cruelty-free and we never test on animals. We're committed to ethical practices and sustainability throughout our supply chain.",
+      "Once you have selected your session slot and filled the pre-assessment form, you will receive a Google Meet link. The first session is about 45 minutes long. The diet discussed during this session is emailed to you as a PDF document within 24 hours after your session.",
   },
   {
-    question: "How can I contact customer support?",
+    question: "How will I receive my diet plan?",
     answer:
-      "Our customer support team is available via email, phone, and live chat. For immediate assistance, click the 'Contact on WhatsApp' button below to start a conversation with our team.",
+      "The diet modifications discussed during the session will be emailed to your registered email ID within 24 working hours of your session.",
   },
   {
-    question: "Do you offer discounts for bulk orders?",
+    question: "Do you give a pre-planned diet to everyone?",
     answer:
-      "Yes, we offer special pricing for bulk orders. Please contact our sales team directly for a custom quote based on your specific requirements.",
+      "No, the diet modifications are curated after understanding your current blood work, eating pattern, and schedule. For clients to stick to a diet and lifestyle change, the diet must be relatable to their lifestyle, thus all diet plans are tailor-made. One size does not fit all.",
+  },
+  {
+    question: "Once the subscription ends, how long do we have to follow the diet?",
+    answer:
+      "The prescribed diet modification will be a balanced diet schedule (with plenty of options as you walk through your follow-ups), which should be a long-term change for steady and better health outcomes.",
+  },
+  {
+    question: "Do you conduct international consultations, depending on the food availability locally, based on the respective country?",
+    answer:
+      "Yes, I do. I have successfully consulted individuals who have migrated to the United States, the United Kingdom, Dubai, France, Germany, Italy, etc.",
+  },
+  {
+    question: "Is there a price difference for international consultations?",
+    answer:
+      "Yes, as there is a bit of extra effort required on my end to evaluate the food, package products, and study the same, the consultation charges are different.",
   },
 ];

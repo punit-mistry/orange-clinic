@@ -272,7 +272,9 @@ const HeroSection = () => {
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
               className="mt-8 flex justify-center md:justify-start"
             >
-              <button className="px-6 py-3 bg-gradient-to-r from-yellow-500 to-orange-400 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-sm sm:text-base">
+              <button 
+              onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdBEF2900K7YpTj8iXqXngG2R7WcGv67RJgJoOsAIHlDKuwFQ/viewform?pli=1", "_blank")}
+              className="px-6 py-3 bg-gradient-to-r from-yellow-500 to-orange-400 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-sm sm:text-base">
                 Start Your Journey
               </button>
             </motion.div>

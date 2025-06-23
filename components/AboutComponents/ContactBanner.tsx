@@ -20,7 +20,10 @@ const ContactBannerSection = () => {
           journey.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center md:justify-start">
-          <Button className="px-6 py-2 bg-black text-white rounded-full hover:bg-white hover:text-orange-500 font-medium shadow hover:scale-105 transition-all cursor-pointer w-full sm:w-auto">
+          <Button
+              onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdBEF2900K7YpTj8iXqXngG2R7WcGv67RJgJoOsAIHlDKuwFQ/viewform?pli=1", "_blank")}
+
+          className="px-6 py-2 bg-black text-white rounded-full hover:bg-white hover:text-orange-500 font-medium shadow hover:scale-105 transition-all cursor-pointer w-full sm:w-auto">
             Book
           </Button>
           <Button 
