@@ -22,6 +22,9 @@ const ClientFeedback = dynamic(() => import('@/components/HomeComponents/ClientF
 const ContactMeSection = dynamic(() => import('@/components/HomeComponents/ContactMeSection'), {
   loading: () => <div className="min-h-[200px] animate-pulse bg-gray-100 rounded-lg" />
 })
+const InstagramReelsSection = dynamic(() => import('@/components/HomeComponents/instagramReelsSection'), {
+  loading: () => <div className="min-h-[200px] animate-pulse bg-gray-100 rounded-lg" />
+})
 
 const AppPage = () => {
   return (
@@ -38,6 +41,9 @@ const AppPage = () => {
       </Suspense>
       <Suspense fallback={<div className="min-h-[200px] animate-pulse bg-gray-100 rounded-lg" />}>
         <ContactMeSection />
+      </Suspense>
+      <Suspense fallback={<div className="min-h-[200px] animate-pulse bg-gray-100 rounded-lg" />}>
+        <InstagramReelsSection />
       </Suspense>
     </main>
   )
