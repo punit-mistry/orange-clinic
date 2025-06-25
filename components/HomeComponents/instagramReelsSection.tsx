@@ -7,28 +7,32 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Play, Instagram, ExternalLink } from "lucide-react"
 import Image from "next/image"
-import Reel from "@/public/reel1.jpg"
+import ReelTofu from "@/public/reel-tofu.jpg"
+import BeetRootThumbNail from "@/public/reel-beetroot.jpg" // Example thumbnail, replace with actual path
+import KebabReel from "@/public/reel-kebab.jpg" // Example thumbnail, replace with actual path
 export default function InstagramReelsSection() {
   const [hoveredReel, setHoveredReel] = useState<number | null>(null)
 
-  const reelUrl = "https://www.instagram.com/reel/CstT61SAFqB/"
   const accountUrl = "https://www.instagram.com/clinicaldietitianaditi/?source=omni_redirect"
 
   const reels = [
     {
       id: 1,
-      title: "Healthy Meal Prep Tips",
-      thumbnail: Reel, // Replace with your actual image path
+      title: "BeetRoot Kanji Recipe",
+      thumbnail: BeetRootThumbNail, // Replace with your actual image path
+      reelUrl: "https://www.instagram.com/clinicaldietitianaditi/reel/DJzBCu5InPa/",
     },
     {
       id: 2,
       title: "Quick Nutrition Facts",
-      thumbnail: Reel, // Replace with your actual image path
+      thumbnail: KebabReel, // Replace with your actual image path
+      reelUrl: "https://www.instagram.com/clinicaldietitianaditi/reel/DKZly_1ImFm/",
     },
     {
       id: 3,
       title: "Diet Plan Insights",
-      thumbnail: Reel, // Replace with your actual image path
+      thumbnail: ReelTofu, // Replace with your actual image path
+      reelUrl: "https://www.instagram.com/reel/CstT61SAFqB/",
     },
   ]
 
@@ -66,7 +70,7 @@ export default function InstagramReelsSection() {
               }`}
               onMouseEnter={() => setHoveredReel(index)}
               onMouseLeave={() => setHoveredReel(null)}
-              onClick={() => window.open(reelUrl, "_blank")}
+              onClick={() => window.open(reel.reelUrl, "_blank")}
               style={{
                 animationDelay: `${index * 0.2}s`,
                 animation: "fadeInUp 0.8s ease-out forwards",
