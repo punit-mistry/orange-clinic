@@ -127,47 +127,62 @@ const faqItems = [
   {
     question: "How to book a session with you?",
     answer:
-      "Once you have read about my services and selected what exactly you want to go ahead with, you can click the “Get started” button and fill out the pre-assessment form. Once I receive the form, I will share payment packages and details on your registered WhatsApp number. Do share the screenshot of payment completion, post which you will get a confirmation message depending on whether you have taken an online or an offline session.",
+      "Once you have read about my services and selected what exactly you want to go ahead with, you can click the \"Get started\" button and fill out the pre-assessment form. Once I receive the form, I will share payment packages and details on your registered WhatsApp number. Do share the screenshot of payment completion, post which you will get a confirmation message depending on whether you have taken an online or an offline session.",
   },
   {
     question: "Do you provide a different diet plan for every single day/week?",
     answer:
-      "I aim to create a lifestyle change, and your 1st session’s diet plan contains enough options till your next follow-up. In each follow-up, I try to improve your macro & micro-nutrient composition and add options that help you enjoy taste while you are on a health goal. Follow-ups are planned according to the patient’s requirements, which can vary between weekly and fortnightly.",
+      "I aim to create a lifestyle change, and your 1st session's diet plan contains enough options till your next follow-up. In each follow-up, I try to up your macro & micro-nutrient composition and add options that help you enjoy taste while you are on a health goal. Follow-ups are planned according to the patient's requirements, which can vary between weekly and fortnightly follow-ups.",
   },
   {
     question: "Do you only recommend a vegetarian meal?",
     answer:
-      "No, the diet plan is based on the client’s food choice, either vegetarian or non-vegetarian. I do not encourage or discourage any of our clients from choosing veg or non-veg food. Clients can be either vegetarian or non-vegetarian—we help them enjoy their food type and achieve their health goals.",
+      "No, the diet plan is based on the client's food choice, either vegetarian or non-vegetarian. I do not encourage or discourage any of our clients from choosing veg/ non-veg food. Client can be either vegetarian or non-vegetarian, we help them enjoy their food type and achieve their health goal.",
   },
   {
     question: "Do you only recommend boiled food?",
     answer:
-      "No, it’s a myth that to lose weight or achieve a health goal, one must eat only boiled or non-tasty food.",
+      "No, it's a myth that to lose weight or achieve a health goal, one must eat only boiled food/non-tasty food.",
   },
   {
     question: "Do we get an extension to our subscription?",
     answer:
-      "Ideally, no, as discounts and package models are curated with the assumption that the client will be consistent and have timely follow-ups. To know more, ask this question during your session.",
+      "Ideally, no, as discounts and package models are curated thinking that the client will be consistent and have timely follow-ups. To know more, ask this question during your session.",
+  },
+  {
+    question: "Once a session is confirmed, will I be able to reschedule the appointment to a later date?",
+    answer:
+      "Yes, only if you inform me 12 hours before your scheduled session time.",
+  },
+  {
+    question: "If I have paid for the session and I fail to inform within the 12-hour window, will I be charged?",
+    answer:
+      "If there is no intimation given and you just do not turn up for your session, I am afraid that there will not be any refunds. Please understand that the slot is practically booked at my end, and the session timing was well discussed before booking.",
+  },
+  {
+    question: "Can I pay via credit card?",
+    answer:
+      "Currently, I accept payment only via UPI, bank transfer, and cash.",
   },
   {
     question: "How are your online sessions conducted?",
     answer:
-      "Once you have selected your session slot and filled the pre-assessment form, you will receive a Google Meet link. The first session is about 45 minutes long. The diet discussed during this session is emailed to you as a PDF document within 24 hours after your session.",
+      "Once you have selected your session slot and filled the pre-assessment form, you will receive a Google Meet link. 1st session is about 45 minutes long. The diet discussed during this session is emailed to you as a PDF document within 24 hours after your session.",
   },
   {
     question: "How will I receive my diet plan?",
     answer:
-      "The diet modifications discussed during the session will be emailed to your registered email ID within 24 working hours of your session.",
+      "The diet modifications that are discussed during the session will be emailed to your registered email ID within 24 working hours of your session.",
   },
   {
     question: "Do you give a pre-planned diet to everyone?",
     answer:
-      "No, the diet modifications are curated after understanding your current blood work, eating pattern, and schedule. For clients to stick to a diet and lifestyle change, the diet must be relatable to their lifestyle, thus all diet plans are tailor-made. One size does not fit all.",
+      "No, the diet modifications are curated after knowing your current blood work, eating pattern, and schedule. I believe, for clients to stick to diet & lifestyle change, the diet needs to be relatable with their lifestyle, thus the diet plans are tailor-made. I believe one size does not fit all.",
   },
   {
     question: "Once the subscription ends, how long do we have to follow the diet?",
     answer:
-      "The prescribed diet modification will be a balanced diet schedule (with plenty of options as you walk through your follow-ups), which should be a long-term change for steady and better health outcomes.",
+      "The prescribed diet modification will be a balanced diet schedule (with plenty of options as you walk through your follow-ups), which should be a long-term change for steady & better health outcomes.",
   },
   {
     question: "Do you conduct international consultations, depending on the food availability locally, based on the respective country?",
@@ -177,6 +192,11 @@ const faqItems = [
   {
     question: "Is there a price difference for international consultations?",
     answer:
-      "Yes, as there is a bit of extra effort required on my end to evaluate the food, package products, and study the same, the consultation charges are different.",
+      "Yes, as there is a bit of extra effort required on my end to evaluate the food, package products, and read about the same, the consultation charges are different.",
+  },
+  {
+    question: "Do I need to get my blood work/ test done before every session?",
+    answer:
+      "In your 1st session, we recommend disclosing all your recent blood reports and scans, as your diet regimen can depend on the evaluation of blood parameters. Depending on your case and how old the reports are, we may ask you to repeat selective tests to track your progress.",
   },
 ];

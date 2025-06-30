@@ -15,6 +15,49 @@ import AXIOMMeasuringSet from "@/public/recommendation/AXIOM-Measuring.jpg";
 import WeightScale from "@/public/recommendation/weight-scale.jpg";
 const recommendedProducts = [
   {
+    name: "Glass tiffin box (200ml)", 
+    url: " https://amzn.to/4jTsGGU",
+    image: GlassTiffin200,
+    description:
+      "Premium glass tiffin box with airtight lid, perfect for meal prep and storage, microwave and dishwasher safe.",
+  },
+  {
+    name: "Glass tiffin box (300ml)",
+    url: " https://amzn.to/3TivHWB ",
+    image: GlassTiffin300,
+    description:
+      "Premium Material: Crafted from high borosilicate glass, ensuring a food-safe and lead-free container that is microwave-safe and eco-friendly.",
+  },
+  {
+    name: "Glass tiffin box (Divided)", 
+    url: " https://amzn.to/4kH0Izk ",
+    image: GlassTiffinDivided,
+    description:
+      "Secure and Airtight: Equipped with a four-sided clip-lock system and an airtight top lid featuring a silicone ring, this glass tiffin box is perfect for meal prep and storage.",
+  },
+  
+  {
+    name: "Weight Scale",
+    url: "https://amzn.to/3HNMvC6",
+    image: WeightScale,
+    description:
+      "Smart digital weight scale with body composition analysis, Bluetooth connectivity, and app integration for comprehensive health tracking",
+  },
+  {
+    name: "Giffy Measuring Set",
+    url: " https://amzn.to/40elyOj",
+    image: GiffyMeasuringSet,
+    description:
+      "Premium Food Grade Material- The measuring cups set made of food-grade stainless steel and PP plastic, 100% rust-resistant, BPA fre",
+  },
+  {
+    name: "AXIOM Measuring Set",
+    url: "https://amzn.to/4jUeDRe",
+    image: AXIOMMeasuringSet,
+    description:
+      "Measuring Cups and Spoons have ultra fine stainless steel construction, Matte finished surface, smooth edges to ensure safety, no rough spots or scratch marks",
+  },
+  {
     name: "Magnesium",
     url: "https://www.ithrive.shop/products/magnesium?ref=FIT2025",
     image: Magnesium,
@@ -38,49 +81,6 @@ const recommendedProducts = [
     image: NutritionalYeast,
     description:
       "Nutritional yeast flakes, a versatile and healthy seasoning and Gluten Free Vegetarian Nutritional Yeast",
-  },
-  {
-    name: "Glass tiffin box (200ml)", 
-    url: " https://amzn.to/4jTsGGU",
-    image: GlassTiffin200,
-    description:
-      "Premium glass tiffin box with airtight lid, perfect for meal prep and storage, microwave and dishwasher safe.",
-  },
-  {
-    name: "Glass tiffin box (300ml)",
-    url: " https://amzn.to/3TivHWB ",
-    image: GlassTiffin300,
-    description:
-      "Premium Material: Crafted from high borosilicate glass, ensuring a food-safe and lead-free container that is microwave-safe and eco-friendly.",
-  },
-  {
-    name: "Glass tiffin box (Divided)", 
-    url: " https://amzn.to/4kH0Izk ",
-    image: GlassTiffinDivided,
-    description:
-      "Secure and Airtight: Equipped with a four-sided clip-lock system and an airtight top lid featuring a silicone ring, this glass tiffin box is perfect for meal prep and storage.",
-  },
-
-  {
-    name: "Weight Scale",
-    url: "https://amzn.to/3HNMvC6",
-    image: WeightScale,
-    description:
-      "Smart digital weight scale with body composition analysis, Bluetooth connectivity, and app integration for comprehensive health tracking",
-  },
-  {
-    name: "Giffy Measuring Set",
-    url: " https://amzn.to/40elyOj",
-    image: GiffyMeasuringSet,
-    description:
-      "Premium Food Grade Material- The measuring cups set made of food-grade stainless steel and PP plastic, 100% rust-resistant, BPA fre",
-  },
-  {
-    name: "AXIOM Measuring Set",
-    url: "https://amzn.to/4jUeDRe",
-    image: AXIOMMeasuringSet,
-    description:
-      "Measuring Cups and Spoons have ultra fine stainless steel construction, Matte finished surface, smooth edges to ensure safety, no rough spots or scratch marks",
   },
   {
     name: "Maiva",

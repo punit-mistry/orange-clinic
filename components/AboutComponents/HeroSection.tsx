@@ -67,13 +67,13 @@ export default function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <Card className="overflow-hidden border-none shadow-lg bg-orange-400/50">
+            <Card className="overflow-hidden border-none shadow-lg ">
               <CardContent className="p-0">
                 <div className="aspect-square  relative overflow-hidden">
                   <Image
-                    src="/about-hero.png"
+                    src="/profile-pic.jpeg"
                     alt="Orange Clinic Wellness Center"
-                    className="object-cover w-full h-full"
+                    className="object-cover w-full h-full "
                     width={1000}
                     height={1000}
                     priority
@@ -91,7 +91,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <motion.div
+            {/* <motion.div
               className="inline-block"
               whileHover={{
                 rotate: [0, -10, 10, -5, 5, 0],
@@ -101,7 +101,7 @@ export default function HeroSection() {
               <div className="bg-gradient-to-r from-yellow-500 to-orange-400 p-3 rounded-lg inline-block text-white">
                 <Package className="h-6 w-6" />
               </div>
-            </motion.div>
+            </motion.div> */}
 
             <motion.h1
               className="text-3xl md:text-4xl font-bold tracking-tight text-black"
@@ -109,8 +109,8 @@ export default function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              Discover the Heart and Soul of Orange Clinic: Your Wellness
-              Journey Begins Here
+              Experience Compassionate Care at Orange Clinic – Where Your
+              Wellness Comes First.
             </motion.h1>
 
             <motion.p
@@ -119,18 +119,38 @@ export default function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              I have been working with sectors like leading, Corporate,
-              Hospitals, Clinics, and International Schools for the last 10
-              years. My vision is to create awareness amongst the crowd about
-              the importance of healthy eating patterns so that they know the
-              true strength and immense power of naturally available food and
-              how it can work over one's health. A future vision is to have a
-              Better India = Fitter India. My expertise is in managing cases
-              like Metabolic diseases, Weight management, Diabetes management,
-              Gestational Diabetes, PCOD (Polly Cystic Ovarian Disease),
-              Hypothyroidism, Nutrition support during Cancer treatment,
-              Nutrition during and post pregnancy, and nutrition & growth chart
-              plotting for kids and much more.
+              Over the past decade, I've had the privilege of working closely
+              with a diverse range of sectors — including corporate
+              organizations, leading hospitals, private clinics, and
+              international schools. My journey has been driven by a single
+              purpose: to create a deeper understanding of the powerful role
+              nutrition plays in our lives. My mission is to spread awareness
+              about the importance of adopting balanced and mindful eating
+              habits. I strongly believe that nature has provided us with
+              everything we need to heal, strengthen, and thrive — we simply
+              need the right knowledge and guidance to harness it. Through my
+              work, I aim to help individuals tap into the immense power of
+              naturally available foods and empower them to take control of
+              their health. With a long-term vision of "Better India = Fitter
+              India," I'm committed to building a healthier nation — one
+              individual at a time. My core areas of expertise include:
+              <ul className="list-disc list-inside space-y-2 mt-4 ml-4  mb-4 font-bold">
+                <li>Metabolic disorders</li>
+                <li>Weight management</li>
+                <li>Diabetes and gestational diabetes care</li>
+                <li>Polycystic Ovarian Disease (PCOD/PCOS)</li>
+                <li>Thyroid-related conditions (including hypothyroidism)</li>
+                <li>Cancer care nutrition (during and post-treatment)</li>
+                <li>Pregnancy and postpartum nutrition</li>
+                <li>Pediatric nutrition and growth tracking</li>
+                <li>Therapeutic diets for lifestyle diseases</li>
+              </ul>
+              My approach combines evidence-based nutritional science with a
+              compassionate, client-centered outlook. Every case is unique — and
+              I make it a priority to customize diet plans that are practical,
+              sustainable, and aligned with each individual's needs, lifestyle,
+              and preferences. Together, let's work towards a healthier, happier
+              you — and a stronger, fitter India.
             </motion.p>
             <motion.div
               className="flex flex-wrap gap-4 pt-4"

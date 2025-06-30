@@ -42,9 +42,9 @@ const GoogleIcon = () => (
   </svg>
 );
 
-// Human avatar images - using placeholder service for realistic avatars
+// Human avatar images - using a more positive and suitable avatar service
 const getAvatarUrl = (seed: string) =>
-  `https://api.dicebear.com/7.x/avataaars/svg?seed=${seed}&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc,ffdfbf`;
+  `https://api.dicebear.com/7.x/personas/svg?seed=${seed}&backgroundColor=ffdfbf,ffd5dc,b6e3f4,c0aede&mood=happy&style=circle`;
 
 // Memoize the TestimonialCard component
 const TestimonialCard = React.memo(

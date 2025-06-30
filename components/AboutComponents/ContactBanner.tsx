@@ -11,7 +11,7 @@ const ContactBannerSection = () => {
   return (
     <section className="w-full max-w-[95%] shadow-2xl shadow-orange-400 rounded-2xl bg-[url('https://plus.unsplash.com/premium_vector-1689096934387-7c844f44a153?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center relative py-12 md:py-18 px-4 flex flex-col items-start text-black m-4 md:m-[64px]">
       <div className="absolute inset-0 "></div>
-      <div className="w-full px-4 md:p-10 relative z-10 max-w-7xl mx-auto text-black bg-orange-200 rounded-2xl  shadow-2xl">
+      <div className="w-full py-4  px-4 md:p-10 relative z-10 max-w-7xl mx-auto text-black bg-orange-200 rounded-2xl  shadow-2xl">
         <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 text-center md:text-left">
           Schedule Your Wellness Appointment Today
         </h2>

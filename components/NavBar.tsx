@@ -58,7 +58,7 @@ function Navbar({ className }: { className?: string }) {
 
       <div
         className={cn(
-          "fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 transition-all duration-300 rounded-full font-semibold hover:shadow-2xl text-clip cursor-pointer",
+          "fixed top-10 inset-x-0 max-w-md mx-auto z-50 transition-all duration-300 rounded-full font-semibold hover:shadow-2xl text-clip cursor-pointer",
           scrolled
             ? "md:shadow-lg md:backdrop-blur md:border"
             : "bg-transparent",
@@ -87,7 +87,7 @@ function Navbar({ className }: { className?: string }) {
                 pathname === "/about" ? "text-orange-500" : "text-foreground hover:text-foreground"
               )}
             >
-              About 
+              About Me
             </Link>
             <Link 
               href="/services" 
@@ -105,7 +105,7 @@ function Navbar({ className }: { className?: string }) {
                 pathname === "/recommendation" ? "text-orange-500" : "text-foreground hover:text-foreground"
               )}
             >
-              Recommendation Products
+              Recommendation 
             </Link>
           </div>
         </div>

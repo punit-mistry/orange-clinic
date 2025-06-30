@@ -27,16 +27,16 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <main className="min-h-screen">
-      <BannerSection />
+      <Suspense fallback={<div className="min-h-[200px] animate-pulse bg-gray-100 rounded-lg" />}>
+        <ServiceBanner />
+      </Suspense>
+      {/* <BannerSection /> */} 
       <HeroSection />
       <Suspense fallback={<div className="min-h-[300px] animate-pulse bg-gray-100 rounded-lg" />}>
         <FaqSection />
       </Suspense>
       <Suspense fallback={<div className="min-h-[200px] animate-pulse bg-gray-100 rounded-lg" />}>
         <ContactBannerSection />
-      </Suspense>
-      <Suspense fallback={<div className="min-h-[200px] animate-pulse bg-gray-100 rounded-lg" />}>
-        <ServiceBanner />
       </Suspense>
     </main>
   )

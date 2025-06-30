@@ -179,7 +179,7 @@ export default function AnimatedFooter() {
               <ul className="space-y-2">
                 {[
                   { text: "Home", href: "/" },
-                  { text: "About Us", href: "/about" },
+                  { text: "About Me", href: "/about" },
                   { text: "Services", href: "/services" },
                   { text: "Recommendations", href: "/recommendation" },
                   {
@@ -216,7 +216,7 @@ export default function AnimatedFooter() {
               <div className="relative w-full pt-[42%] overflow-hidden rounded-md shadow-lg">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.5647757743022!2d72.83445967596029!3d19.21420264761787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6cdcc94ef35%3A0x795a2947e104e8fb!2sOrange%20Clinic!5e0!3m2!1sen!2sin!4v1750532095544!5m2!1sen!2sin"
-                  className="absolute top-0 left-0 w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 ease-in-out border-0"
+                  className="absolute top-0 left-0 w-full h-full grayscale-0 transition-all duration-500 ease-in-out border-0"
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -235,8 +235,8 @@ export default function AnimatedFooter() {
           />
 
           {/* Bottom section */}
-          <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-white/80">
-            <motion.div
+          <div className="flex flex-col sm:flex-row justify-end items-center text-sm text-white/80">
+            {/* <motion.div
               className="flex space-x-4 mb-4 sm:mb-0"
               variants={containerVariants}
             >
@@ -252,7 +252,7 @@ export default function AnimatedFooter() {
                   </motion.div>
                 )
               )}
-            </motion.div>
+            </motion.div> */}
             <motion.div
               variants={itemVariants}
               className="text-white/80"

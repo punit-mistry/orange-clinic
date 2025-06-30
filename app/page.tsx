@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 
 // Keep HeroSection as static import since it's above the fold
 import HeroSection from '@/components/HomeComponents/HeroSection'
-import { AutoDisclaimer } from '@/components/Disclaimer/auto-disclaimer'
+// import { AutoDisclaimer } from '@/components/Disclaimer/auto-disclaimer'
 
 // Dynamic imports for components below the fold
 const HeaderSection = dynamic(() => import('@/components/HomeComponents/HeaderSection'), {
@@ -47,7 +47,7 @@ const AppPage = () => {
         <InstagramReelsSection />
       </Suspense>
        {/* Auto-show consent disclaimer */}
-      <AutoDisclaimer type="consent" delay={2000} />
+      {/* <AutoDisclaimer type="consent" delay={2000} /> */}
     </main>
   )
 }
